@@ -1,0 +1,6 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/DNS-TokenDNS.t
+lib/DNS/TokenDNS.pm
