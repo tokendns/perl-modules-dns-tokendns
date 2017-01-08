@@ -33,7 +33,9 @@ new
 
 Creates a new DNS::TokenDNS object.
 
-  my $dns = DNS::TokenDNS->new({'apikey' => 'APIKEY'});
+```
+my $dns = DNS::TokenDNS->new({'apikey' => 'APIKEY'});
+```
 
 Your TokenDNS apikey must be provided.
 
