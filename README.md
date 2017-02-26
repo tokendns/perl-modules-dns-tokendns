@@ -200,6 +200,13 @@ update_address
 my $rs = $dns->update_address($billing_name,$billing_address1,$billing_address2,$billing_city,$billing_zip,$billing_country);
 ```
 
+export_records
+-------
+
+```
+my $rs = $dns->export_records($domain);
+```
+
 AUTHOR
 -------
 

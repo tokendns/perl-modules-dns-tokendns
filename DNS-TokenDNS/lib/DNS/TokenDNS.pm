@@ -407,6 +407,23 @@ sub update_address {
 }
 
 ##########################################################
+#                         Export                         #
+##########################################################
+
+sub export_records {
+	my ($self,$domain) = @_;
+	die "You must provide a domain name" if !$domain;
+
+	my %args = (
+		'domain' => $domain || 'blabladns.xyz',
+		'action' => 'records'
+	);
+
+	my $response = $self->_get_it( 'export', \%args );
+	return $response;
+}
+
+##########################################################
 #                           End                          #
 ##########################################################
 
@@ -555,6 +572,10 @@ Your TokenDNS apikey must be provided.
 =head2 update_address
 
 	my $rs = $dns->update_address($billing_name,$billing_address1,$billing_address2,$billing_city,$billing_zip,$billing_country);
+
+=head2 export_records
+
+	my $rs = $dns->export_records($domain);
 
 =head1 AUTHOR
 

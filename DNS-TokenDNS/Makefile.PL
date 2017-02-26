@@ -12,5 +12,5 @@ WriteMakefile(
 		dist => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     ($] >= 5.005 ?
       (ABSTRACT_FROM  => 'lib/DNS/TokenDNS.pm', 
-       AUTHOR         => 'Steffen Wirth <steffen.wirth@tokendns.co>') : ()),
+       AUTHOR         => 'Steffen Wirth <hello@tokendns.co>') : ()),
 );
